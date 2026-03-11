@@ -108,7 +108,7 @@ export async function searchEntriesSemantic(
   queryEmbedding: number[],
   filters?: SearchFilters,
   limit: number = 20,
-  similarityThreshold: number = 0.5
+  similarityThreshold: number = 0.2
 ): Promise<SearchResult[]> {
   // Build the WHERE conditions
   const conditions = [

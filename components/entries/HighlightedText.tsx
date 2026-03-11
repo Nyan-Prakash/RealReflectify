@@ -30,7 +30,6 @@ const entityTypeColors: Record<string, string> = {
 
 export function HighlightedText({ content, mentions }: HighlightedTextProps) {
   if (!mentions || mentions.length === 0) {
-    return <p className="text-text-primary whitespace-pre-wrap">{content}</p>;
   }
 
   // Create a map of text spans to highlight
@@ -102,5 +101,5 @@ export function HighlightedText({ content, mentions }: HighlightedTextProps) {
     );
   }
 
-  return <p className="text-gray-900 whitespace-pre-wrap leading-relaxed">{result}</p>;
+  return <p className="text-text-primary whitespace-pre-wrap leading-relaxed">{result}</p>;
 }
